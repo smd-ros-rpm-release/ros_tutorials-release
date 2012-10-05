@@ -1,0 +1,18 @@
+Source: ros-fuerte-ros-tutorials
+Section: misc
+Priority: extra
+Maintainer: Ken Conley <kwc@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-fuerte-genmsg,ros-fuerte-langs-dev,ros-fuerte-std-msgs,libqt4-dev,qt4-qmake,ros-fuerte-ros-comm,ros-fuerte-catkin
+Homepage: http://www.ros.org/wiki/ros_tutorials
+Standards-Version: 3.9.2
+
+Package: ros-fuerte-ros-tutorials
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqtgui4,ros-fuerte-ros-comm,ros-fuerte-std-msgs,ros-fuerte-langs
+Description: ros_tutorials contains packages that demonstrate various features of ROS, as well as support packages which help demonstrate those features.
+ .
+ This stack contains the packages:
+ * rospy_tutorials: This package attempts to show the features of ROS python API step-by-step, including using messages, servers, parameters, etc. These tutorials are compatible with the nodes in roscpp_tutorial.
+ * turtlesim: turtlesim is a tool made for teaching ROS and ROS-PKGS.
+ * roscpp_tutorials: This package attempts to show the features of ROS step-by-step, including using messages, servers, parameters, etc.
+

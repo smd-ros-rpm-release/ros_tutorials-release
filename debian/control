@@ -1,0 +1,12 @@
+Source: ros-groovy-roscpp-tutorials
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-rosconsole,ros-groovy-genmsg,ros-groovy-catkin,ros-groovy-roscpp,ros-groovy-rostime,ros-groovy-std-msgs,ros-groovy-roscpp-serialization,ros-groovy-langs-dev
+Homepage: http://www.ros.org/wiki/roscpp_tutorials
+Standards-Version: 3.9.2
+
+Package: ros-groovy-roscpp-tutorials
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-rosconsole,ros-groovy-langs,ros-groovy-rostime,ros-groovy-roscpp,ros-groovy-roscpp-serialization
+Description: This package attempts to show the features of ROS step-by-step, including using messages, servers, parameters, etc.

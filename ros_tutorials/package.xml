@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>ros_tutorials</name>
-  <version>0.3.8</version>
+  <version>0.3.9</version>
   <description>
     ros_tutorials contains packages that demonstrate various features of ROS,
     as well as support packages which help demonstrate those features.
@@ -15,7 +15,7 @@
   <author>Josh Faust</author>
   <author>Ken Conley</author>
 
-  <build_depend>catkin</build_depend>
+  <buildtool_depend>catkin</buildtool_depend>
 
   <run_depend>roscpp_tutorials</run_depend>
   <run_depend>rospy_tutorials</run_depend>

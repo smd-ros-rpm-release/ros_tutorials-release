@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>roscpp_tutorials</name>
-  <version>0.3.8</version>
+  <version>0.3.9</version>
   <description>
     This package attempts to show the features of ROS step-by-step,
     including using messages, servers, parameters, etc.
@@ -14,7 +14,8 @@
   <url type="repository">https://github.com/ros/ros_tutorials</url>
   <author>Morgan Quigley</author>
 
-  <build_depend>catkin</build_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+
   <build_depend>message_generation</build_depend>
   <build_depend>rosconsole</build_depend>
   <build_depend>roscpp</build_depend>

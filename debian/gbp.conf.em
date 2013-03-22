@@ -1,3 +1,3 @@
 [git-buildpackage]
-upstream-branch=release/turtlesim/0.3.9
+upstream-branch=@(release_tag)
 upstream-tree=branch

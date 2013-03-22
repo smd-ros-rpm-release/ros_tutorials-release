@@ -30,15 +30,18 @@
 #ifndef TURTLESIM_TURTLE_H
 #define TURTLESIM_TURTLE_H
 
-#include <ros/ros.h>
-#include <boost/shared_ptr.hpp>
+// This prevents a MOC error with versions of boost >= 1.48
+#ifndef Q_MOC_RUN  // See: https://bugreports.qt-project.org/browse/QTBUG-22829
+# include <ros/ros.h>
+# include <boost/shared_ptr.hpp>
 
-#include <turtlesim/Pose.h>
-#include <turtlesim/Velocity.h>
-#include <turtlesim/SetPen.h>
-#include <turtlesim/TeleportRelative.h>
-#include <turtlesim/TeleportAbsolute.h>
-#include <turtlesim/Color.h>
+# include <turtlesim/Pose.h>
+# include <geometry_msgs/Twist.h>
+# include <turtlesim/SetPen.h>
+# include <turtlesim/TeleportRelative.h>
+# include <turtlesim/TeleportAbsolute.h>
+# include <turtlesim/Color.h>
+#endif
 
 #include <QImage>
 #include <QPainter>
@@ -58,7 +61,7 @@ public:
   bool update(double dt, QPainter& path_painter, const QImage& path_image, qreal canvas_width, qreal canvas_height);
   void paint(QPainter &painter);
 private:
-  void velocityCallback(const VelocityConstPtr& vel);
+  void velocityCallback(const geometry_msgs::Twist::ConstPtr& vel);
   bool setPenCallback(turtlesim::SetPen::Request&, turtlesim::SetPen::Response&);
   bool teleportRelativeCallback(turtlesim::TeleportRelative::Request&, turtlesim::TeleportRelative::Response&);
   bool teleportAbsoluteCallback(turtlesim::TeleportAbsolute::Request&, turtlesim::TeleportAbsolute::Response&);

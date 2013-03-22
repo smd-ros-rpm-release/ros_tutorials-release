@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <package>
   <name>ros_tutorials</name>
-  <version>0.3.9</version>
+  <version>0.3.11</version>
   <description>
     ros_tutorials contains packages that demonstrate various features of ROS,
     as well as support packages which help demonstrate those features.
   </description>
-  <maintainer email="dthomas@willowgarage.com">Dirk Thomas</maintainer>
+  <maintainer email="dthomas@osrfoundation.org">Dirk Thomas</maintainer>
   <license>BSD</license>
 
   <url type="website">http://www.ros.org/wiki/ros_tutorials</url>

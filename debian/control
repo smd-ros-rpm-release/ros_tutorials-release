@@ -1,0 +1,12 @@
+Source: ros-groovy-turtlesim
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 7.0.50~), libqt4-dev, qt4-qmake, ros-groovy-catkin, ros-groovy-message-generation, ros-groovy-rosconsole, ros-groovy-roscpp, ros-groovy-roscpp-serialization, ros-groovy-roslib, ros-groovy-rostime, ros-groovy-std-msgs, ros-groovy-std-srvs
+Homepage: http://www.ros.org/wiki/turtlesim
+Standards-Version: 3.9.2
+
+Package: ros-groovy-turtlesim
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqt4-dbus, libqt4-network, libqt4-script, libqt4-test, libqt4-xml, libqtcore4, ros-groovy-message-runtime, ros-groovy-rosconsole, ros-groovy-roscpp, ros-groovy-roscpp-serialization, ros-groovy-roslib, ros-groovy-rostime, ros-groovy-std-msgs, ros-groovy-std-srvs
+Description: turtlesim is a tool made for teaching ROS and ROS packages.

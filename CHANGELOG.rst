@@ -2,6 +2,10 @@
 Changelog for package turtlesim
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.4.1 (2013-09-11)
+------------------
+* add hydro image to turtlesim
+
 0.4.0 (2013-09-06)
 ------------------
 * Adding png version of hydro for wiki linking

@@ -1,3 +1,26 @@
+## ros_tutorials - 0.4.3-0
+
+User `dthomas@drudge` released the packages in the `ros_tutorials` repository by running `/usr/bin/bloom-release -t hydro -r hydro ros_tutorials` on `Wed, 08 Jan 2014 06:25:00 -0000`
+
+These packages were released:
+- `ros_tutorials`
+- `roscpp_tutorials`
+- `rospy_tutorials`
+- `turtlesim`
+
+Version of package(s) in repository `ros_tutorials`:
+- rosdistro version: `0.4.2-0`
+- old version: `0.4.2-0`
+- new version: `0.4.3-0`
+
+Versions of tools used:
+- bloom version: `0.4.4`
+- catkin_pkg version: `0.1.24`
+- rosdep version: `0.10.24`
+- rosdistro version: `0.2.20`
+- vcstools version: `0.1.33`
+
+
 ## ros_tutorials - 0.4.2-0
 
 User `dthomas@drudge` released the packages in the `ros_tutorials` repository by running `/usr/bin/bloom-release -t hydro -r hydro ros_tutorials` on `Fri, 04 Oct 2013 17:34:31 -0000`

@@ -1,0 +1,148 @@
+ros-hydro-rospy-tutorials (0.4.3-0raring) raring; urgency=high
+
+  * python 3 compatibility (#13 <https://github.com/ros/ros_tutorials/issues/13>)
+  * remove load_manifest calls
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 07 Jan 2014 08:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.4.2-0raring) raring; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 04 Oct 2013 07:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.4.1-0raring) raring; urgency=high
+
+  * check for CATKIN_ENABLE_TESTING
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 11 Sep 2013 07:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.4.0-0raring) raring; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 06 Sep 2013 07:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.3.13-0raring) raring; urgency=high
+
+  * check for CATKIN_ENABLE_TESTING
+  * remove mainpage.dox
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 21 Aug 2013 07:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.3.12-0raring) raring; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 29 Mar 2013 07:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.3.11-0raring) raring; urgency=high
+
+  * update email in package.xml
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 21 Mar 2013 07:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.3.10-0raring) raring; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 08 Mar 2013 08:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.3.9-0raring) raring; urgency=high
+
+  * modified dep type of catkin
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 21 Dec 2012 08:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.3.8-0raring) raring; urgency=high
+
+  * add missing downstream depend
+  * switched from langs to message_* packages
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 13 Dec 2012 08:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.3.7-0raring) raring; urgency=high
+
+  * fix node names (fix #2 <https://github.com/ros/ros_tutorials/issues/2>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 06 Dec 2012 08:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.3.6-0raring) raring; urgency=high
+
+  * fix catkin function order
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 30 Oct 2012 07:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.3.5-0raring) raring; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 18 Oct 2012 07:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.3.4-0raring) raring; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Sat, 06 Oct 2012 07:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.3.3-0raring) raring; urgency=high
+
+  * added missing dep to rostest
+  * fixed missing genmsg stuff
+  * updated to latest catkin
+  * updated package.xml files
+  * added package.xml files
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 05 Oct 2012 07:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.3.2-0raring) raring; urgency=high
+
+  * updated catkin variables
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 05 Sep 2012 07:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.3.1-0raring) raring; urgency=high
+
+  * use install destination variables, removed manual installation of manifests
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 03 Sep 2012 07:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.3.0-0raring) raring; urgency=high
+
+  * updated to current catkin
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 29 Aug 2012 07:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.2.20-0raring) raring; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 08 Feb 2013 08:00:00 -0000
+
+ros-hydro-rospy-tutorials (0.2.19-0raring) raring; urgency=high
+
+  * make find_package REQUIRED
+  * removed obsolete catkin tag from manifest files
+  * fixed permissions of installed rospy_tutorials files
+  * remove old Makefiles and bump to 0.2.13
+  * removed catkin_export_python() from rospy_tutorials
+  * clean up build; tests turned on (but failing)
+  * adding <catkin/>, removing depends and platform tags
+  * updated to new catkin_export_python macro
+  * Don't install version control files
+  * catkin tweaks
+  * catkin tweaks
+  * initial add of rospy_tutorials
+  * url fixes
+  * now uses myargv
+  * Added Ubuntu platform tags
+  * fixed deprecated use
+  * a2i_client: simplified conversion
+  * added msg/srv export
+  * Remove use of deprecated rosbuild macros
+  * updated to load_manifest
+  * Create trunk/branches/tags
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 15 Jun 2012 04:13:40 -0700
+
+

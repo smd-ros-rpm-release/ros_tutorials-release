@@ -36,15 +36,13 @@
 ## Simple talker demo that published std_msgs/Strings messages
 ## to the 'chatter' topic
 
-import roslib; roslib.load_manifest('rospy_tutorials')
-
 import rospy
 from std_msgs.msg import String
 
 pub = None
 # publish a message to subscribers when we die
 def talker_shutdown():
-    print "I'm dead!"
+    print("I'm dead!")
     pub.publish("I'm dead!")
     
 def talker():

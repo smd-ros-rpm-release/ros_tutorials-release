@@ -38,8 +38,6 @@
 PKG = 'rospy_tutorials'
 NAME = 'talker_listener_test'
 
-import roslib; roslib.load_manifest(PKG)
-
 import sys, unittest, time
 
 import rospy, rostest
@@ -51,7 +49,7 @@ class TestTalkerListener(unittest.TestCase):
         self.success = False
         
     def callback(self, data):
-        print rospy.get_caller_id(), "I heard %s"%data.data
+        print(rospy.get_caller_id(), "I heard %s"%data.data)
         self.success = data.data and data.data.startswith('hello world')
 
     def test_talker_listener(self):

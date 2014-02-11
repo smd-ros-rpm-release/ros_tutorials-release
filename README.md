@@ -1,5 +1,28 @@
 ## ros_tutorials - 0.4.3-0
 
+User `dthomas@drudge` released the packages in the `ros_tutorials` repository by running `/usr/bin/bloom-release -r indigo -t indigo ros_tutorials` on `Tue, 11 Feb 2014 21:37:32 -0000`
+
+These packages were released:
+- `ros_tutorials`
+- `roscpp_tutorials`
+- `rospy_tutorials`
+- `turtlesim`
+
+Version of package(s) in repository `ros_tutorials`:
+- rosdistro version: `null`
+- old version: `None-0`
+- new version: `0.4.3-0`
+
+Versions of tools used:
+- bloom version: `0.4.9`
+- catkin_pkg version: `0.1.26`
+- rosdep version: `0.10.25`
+- rosdistro version: `0.3.4`
+- vcstools version: `0.1.33`
+
+
+## ros_tutorials - 0.4.3-0
+
 User `dthomas@drudge` released the packages in the `ros_tutorials` repository by running `/usr/bin/bloom-release -t hydro -r hydro ros_tutorials` on `Wed, 08 Jan 2014 06:25:00 -0000`
 
 These packages were released:

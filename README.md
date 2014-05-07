@@ -1,3 +1,26 @@
+## ros_tutorials (indigo) - 0.5.0-0
+
+The packages in the `ros_tutorials` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo ros_tutorials` on `Wed, 07 May 2014 22:12:25 -0000`
+
+These packages were released:
+- `ros_tutorials`
+- `roscpp_tutorials`
+- `rospy_tutorials`
+- `turtlesim`
+
+Version of package(s) in repository `ros_tutorials`:
+- rosdistro version: `0.4.3-1`
+- old version: `0.4.3-1`
+- new version: `0.5.0-0`
+
+Versions of tools used:
+- bloom version: `0.5.5`
+- catkin_pkg version: `0.2.2`
+- rosdep version: `0.10.27`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.33`
+
+
 ## ros_tutorials (indigo) - 0.4.3-1
 
 User `dthomas@drudge` released the packages in the `ros_tutorials` repository into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo ros_tutorials` on `Wed, 05 Mar 2014 04:01:39 -0000`

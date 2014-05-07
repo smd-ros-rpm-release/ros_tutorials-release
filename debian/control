@@ -1,0 +1,12 @@
+Source: ros-indigo-roscpp-tutorials
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 7.0.50~), ros-indigo-catkin, ros-indigo-message-generation, ros-indigo-rosconsole, ros-indigo-roscpp, ros-indigo-roscpp-serialization, ros-indigo-rostime, ros-indigo-std-msgs
+Homepage: http://www.ros.org/wiki/roscpp_tutorials
+Standards-Version: 3.9.2
+
+Package: ros-indigo-roscpp-tutorials
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-message-runtime, ros-indigo-rosconsole, ros-indigo-roscpp, ros-indigo-roscpp-serialization, ros-indigo-rostime, ros-indigo-std-msgs
+Description: This package attempts to show the features of ROS step-by-step, including using messages, servers, parameters, etc.

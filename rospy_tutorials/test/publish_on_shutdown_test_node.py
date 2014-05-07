@@ -44,10 +44,15 @@ pub = None
 def talker_shutdown():
     print("I'm dead!")
     pub.publish("I'm dead!")
+
+    # need to sleep a bit to ensure that the message is sent
+    # which happens asynchonously
+    import time
+    time.sleep(2.0)
     
 def talker():
     global pub
-    pub = rospy.Publisher('chatter', String)
+    pub = rospy.Publisher('chatter', String, queue_size=10)
     rospy.init_node('talker', anonymous=True)
 
     # register talker_shutdown() to be called when rospy exits

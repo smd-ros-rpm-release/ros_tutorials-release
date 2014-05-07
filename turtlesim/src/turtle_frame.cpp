@@ -73,6 +73,7 @@ TurtleFrame::TurtleFrame(QWidget* parent, Qt::WindowFlags f)
   turtles.append("fuerte.png");
   turtles.append("groovy.png");
   turtles.append("hydro.svg");
+  turtles.append("indigo.svg");
 
   QString images_path = (ros::package::getPath("turtlesim") + "/images/").c_str();
   for (size_t i = 0; i < turtles.size(); ++i)
@@ -96,6 +97,18 @@ TurtleFrame::TurtleFrame(QWidget* parent, Qt::WindowFlags f)
   width_in_meters_ = (width() - 1) / meter_;
   height_in_meters_ = (height() - 1) / meter_;
   spawnTurtle("", width_in_meters_ / 2.0, height_in_meters_ / 2.0, 0);
+
+  // spawn all available turtle types
+  if(FALSE)
+  {
+    for(size_t index = 0; index < turtles.size(); index++)
+    {
+      QString name = turtles[index];
+      name = name.split(".").first();
+      name.replace(QString("-"), QString(""));
+      spawnTurtle(name.toStdString(), 1.0 + 1.5 * (index % 7), 1.0 + 1.5 * (index / 7), PI / 2.0, index);
+    }
+  }
 }
 
 TurtleFrame::~TurtleFrame()
@@ -139,6 +152,11 @@ bool TurtleFrame::hasTurtle(const std::string& name)
 
 std::string TurtleFrame::spawnTurtle(const std::string& name, float x, float y, float angle)
 {
+  return spawnTurtle(name, x, y, angle, rand() % turtle_images_.size());
+}
+
+std::string TurtleFrame::spawnTurtle(const std::string& name, float x, float y, float angle, size_t index)
+{
   std::string real_name = name;
   if (real_name.empty())
   {
@@ -157,7 +175,7 @@ std::string TurtleFrame::spawnTurtle(const std::string& name, float x, float y, 
     }
   }
 
-  TurtlePtr t(new Turtle(ros::NodeHandle(real_name), turtle_images_[rand() % turtle_images_.size()], QPointF(x, y), angle));
+  TurtlePtr t(new Turtle(ros::NodeHandle(real_name), turtle_images_[index], QPointF(x, y), angle));
   turtles_[real_name] = t;
   update();
 

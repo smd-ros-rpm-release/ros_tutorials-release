@@ -2,6 +2,11 @@
 Changelog for package turtlesim
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.5.0 (2014-05-07)
+------------------
+* add indigo turtle
+* add disabled code to easily spawn all available turtle types
+
 0.4.3 (2014-01-07)
 ------------------
 

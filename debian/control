@@ -1,0 +1,12 @@
+Source: ros-indigo-turtlesim
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), libqt4-dev, qt4-qmake, ros-indigo-catkin, ros-indigo-geometry-msgs, ros-indigo-message-generation, ros-indigo-rosconsole, ros-indigo-roscpp, ros-indigo-roscpp-serialization, ros-indigo-roslib, ros-indigo-rostime, ros-indigo-std-msgs, ros-indigo-std-srvs
+Homepage: http://www.ros.org/wiki/turtlesim
+Standards-Version: 3.9.2
+
+Package: ros-indigo-turtlesim
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqt4-dbus, libqt4-network, libqt4-script, libqt4-test, libqt4-xml, libqtcore4, ros-indigo-geometry-msgs, ros-indigo-message-runtime, ros-indigo-rosconsole, ros-indigo-roscpp, ros-indigo-roscpp-serialization, ros-indigo-roslib, ros-indigo-rostime, ros-indigo-std-msgs, ros-indigo-std-srvs
+Description: turtlesim is a tool made for teaching ROS and ROS packages.

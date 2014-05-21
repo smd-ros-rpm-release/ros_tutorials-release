@@ -1,0 +1,12 @@
+Source: ros-indigo-ros-tutorials
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://www.ros.org/wiki/ros_tutorials
+Standards-Version: 3.9.2
+
+Package: ros-indigo-ros-tutorials
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-roscpp-tutorials, ros-indigo-rospy-tutorials, ros-indigo-turtlesim
+Description: ros_tutorials contains packages that demonstrate various features of ROS, as well as support packages which help demonstrate those features.
